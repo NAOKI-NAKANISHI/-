@@ -1,0 +1,30 @@
+\documentclass[a4j]{jarticle}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{top=2.3cm,bottom=2.3cm,left=2.3cm, right=2.3cm}\\左右のマージンを23mmに設定上下はtop,bottomを使用
+\makeatletter
+\def\@maketitle{%
+\begin{flushright}%
+{\large \@date}% 日付
+\end{flushright}%
+\begin{center}%
+{\LARGE \@title \par}% タイトル
+\end{center}%
+\begin{flushright}%
+{\large \@author}% 著者
+\end{flushright}%
+\par\vskip 1.5em
+}
+\makeatother
+
+\title{Foo\\Bar}
+\author{Hoge}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{hogehoge}
+
+
+
+\end{document}
